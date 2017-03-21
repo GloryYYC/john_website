@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+header {
+    background-color: black;
+    opacity: 0.5;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 100px 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 20px;
+}
+
+
+/*a*/
+
+a {
+    color: white!important;
+    text-decoration: none!important;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.aboutUs {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.aboutUs h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.aboutUs h4 {
+    text-align: center;
+}
+
+
+/*Hero, image of the background*/
+
+.hero {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    font-family: 'Myriad', sans-serif;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-color: black;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-color: black;
+}
+
+.hero h1 {
+    padding-top: 200px;
+    font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero input {
+    margin: 12px;
+}
+
+.hero hr {
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: #1a75ff;
+    padding: 10px;
+    display: inline-block!important;
+    margin: 10px;
+}
+
+.hero h2 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    background: grey;
+    opacity: 0.85;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.hero-text:hover {
+    opacity: 1;
+}
+
+.aboutUs {
+    margin: 12px;
+}
+
+.staffInfo {
+    margin: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 25px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+/*contact-form*/
+
+
+/*
+.contact-form {
+  position: relative;
+  justify-content: center;
+  min-height: 94vh;
+  color: #fff;
+  text-align: center;
+  font-family: 'Myriad', sans-serif;
+}
+
+.contact-form a {
+    background-color: #1a75ff;
+    padding: 10px;
+    display: inline-block!important;
+    margin: 10px;
+}
+
+.contact-form input {
+    margin: 10px;
+}
+
+.contact-form h2 {
+    margin: 10px;
+}
+
+.contact-form h4 {
+    margin: 10px;
+}
+
+.contact-form h5 {
+    margin: 10px;
+}
+.contact-form img{
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-color: black;
+}
+#contactBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-color: black;
+}
+.contact-form hr {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+*/
+
+
+/*-------------
+From john's example 2
+-------------*/
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: auto;
+}
+
+.wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    flex: 1 100%;
+}
+
+section article img {
+    width: 100%;
+}
+
+section article h4 {
+    font-weight: bold;
+    color: #47476b;
+}
+
+.footer {
+    font-size: 0.85em;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+.main {
+    text-align: left;
+    background: white;
+}
+
+.aside-2 {
+    background: white;
+}
+
+.aside-1 {
+    background: white;
+}
+
+.aside-1 li {
+    list-style: none;
+}
+
+.aside-1 li a {
+    color: grey!important;
+}
+
+@media all and (max-height: 600px) {
+    .hero {
+        min-height: 20vh;
+    }
+    .aside-1 {
+        order: 2;
+    }
+    .aside-2 {
+        order: 1;
+    }
+    .main {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .aside {
+        flex: 1 auto;
+    }
+    .aside-1 {
+        order: 2;
+    }
+    .aside-2 {
+        order: 1;
+    }
+    .main {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 5 0px;
+    }
+    .aside-1 {
+        order: 2;
+    }
+    .aside-2 {
+        order: 1;
+    }
+    .main {
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}

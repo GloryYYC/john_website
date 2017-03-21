@@ -1,0 +1,163 @@
+<!doctype html>
+      <head>
+     <!--This is a comment. Comments are not displayed in the browser-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--CSS file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+            <title>Website</title>
+      <style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.main {
+    text-align: left;
+    background: cornflowerblue;
+}
+
+.header {background: coral;}
+.footer {background: lightgreen;}
+.aside1 {background: moccasin;}
+.aside2 {background: violet;}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside1 { order: 1; } 
+    .main    { order: 2; }
+    .aside2 { order: 3; }
+    .footer  { order: 4; }
+}
+</style>
+	  </head>
+    
+       <body>
+	   
+           <section class="flex-container">
+                <header>
+                    <div id="logo"></div>
+                   <div id="language"></div>
+               </header>
+   
+               <nav>
+                   <ul>
+                       <li>menu 1</li>
+                       <li>menu 2</li>
+                       <li>menu 3</li>
+                       <li>menu 4</li>
+                       <li>menu 5</li>
+                   </ul>
+               </nav>
+   
+               <div id="main">
+                   <div id="main-left">
+                       <article>
+                           <header><h1>This is a title</h1></header>
+  
+                           <p>Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Quisque semper, leo eget</p>
+   
+                           <p>Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Quisque semper, leo eget</p>
+   
+                           <p>Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Quisque semper, leo eget</p>
+   
+                           <p>Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Quisque semper, leo eget</p>
+                       </article>
+               </div>
+  
+                   <div id="main-right">
+                     <section id="main-right-hot">
+                          <h2>Hot items</h2>
+                           <ul>
+                               <li>Lorem ipsum</li>
+                               <li>dolor sit</li>
+                               <li>...</li>
+                           </ul>
+                       </section>
+   
+                       <section id="main-right-new">
+                           <h2>New items</h2>
+                           <ul>
+                             <li>Lorem ipsum</li>
+                             <li>dolor sit</li>
+                             <li>...</li>
+                        </ul>
+                     </section>
+                  </div>
+               </div>
+  
+               <div id="news-items">
+                   <header><h2>The latest news</h2></header>
+   
+                 <div id="item_1">
+                       <article>
+                        <header>
+                           <img src="#" title="titel artikel" />
+                             <h3>Lorem ipsum .....</h3>
+                         </header>
+                          <p>Lorem ipsum dolor sit amet,
+                        adipiscing elit. Quisque semper, </p>
+                        <a href="#">Read more</a>
+                    </article>
+                </div>
+  
+ 
+                 <div id="item_2">
+                      <article>
+                         <header>
+                             <img src="#" title="titel artikel" />
+                            <h3>Lorem ipsum .....</h3>
+                         </header>
+                         <p>Lorem ipsum dolor sit amet,
+                         adipiscing elit. Quisque semper, </p>
+                          <a href="#">Read more</a>
+                     </article>
+                  </div>
+  
+                <div id="item_3">
+                    <article>
+                         <header>
+                            <img src="#" title="titel artikel" />
+                             <h3>Lorem ipsum .....</h3>
+                          </header>
+                        <p>Lorem ipsum dolor sit amet,
+                          adipiscing elit. Quisque semper, </p>
+                          <a href="#">Read more</a>
+                     </article>
+                 </div>
+              </div>
+ 
+             <footer>
+                  <ul>
+                     <li>menu 1</li>
+                      <li>menu 2</li>
+                      <li>menu 3</li>
+                      <li>menu 4</li>
+                      <li>menu 5</li>
+                  </ul>
+              </footer>
+          </section>
+      </body>
+ </html>

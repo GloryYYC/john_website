@@ -1,0 +1,35 @@
+#overarchingdiv {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: auto;
+    z-index: 1;
+}
+
+
+
+.box2 {
+  float: left;
+    position: relative;
+    width: 400px;
+    height: atuo;
+    margin: 5px;
+
+}
+
+.box2 img {
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.box2 img.top:hover {
+    opacity: 0;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+}
