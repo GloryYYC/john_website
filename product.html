@@ -30,9 +30,9 @@
             <img src="img/product1.jpg" id="contentPic" /><br />
             <h2 id="contentTitle">This is product plan 1</h2>
             <p>
-                This is a product description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                This is a general product description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </article>
         <aside class="aside aside-1">
             <li><a href="#" id="0" onclick="change(this.id)">Product plan 1</a></li>
@@ -43,18 +43,7 @@
 
     </section>
     <footer class="footer">copy right 2017 somthing somthing</footer>
+    <script src="assignment2.js"></script>
 </body>
-<script type="text/javascript">
-//product list that list out the preduct
-    var productList = ["product1", "product2", "product3", "product4"];
-    //function that change product picture on click
-    function change(clicked_id) {
-      //changing the image with src
-        document.getElementById("contentPic").src = "img/" + productList[clicked_id] + ".jpg";
-        //change the product name
-        document.getElementById("contentTitle").innerHTML = "This is " + productList[clicked_id];
-        //$("#" + clicked_id).addclass('clickedClass');
-    };
-</script>
 
 </html>
