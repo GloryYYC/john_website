@@ -50,7 +50,7 @@ a:hover {
 .aboutUs {
     position: relative;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 95vh;
     text-align: center;
     margin-top: 40px!important;
 }
@@ -70,7 +70,7 @@ a:hover {
 .hero {
     position: relative;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 98vh;
     color: #fff;
     text-align: center;
     font-family: 'Myriad', sans-serif;
@@ -178,6 +178,7 @@ From john's example 2
     position: relative;
     top: auto;
     margin-top: 40px;
+    min-height: 95vh!important;
 }
 
 .wrapper {
@@ -187,9 +188,6 @@ From john's example 2
     flex: 1 100%;
 }
 
-section article img {
-    width: 100%;
-}
 
 section article h4 {
     font-weight: bold;

@@ -1,5 +1,5 @@
 //product list that list out the preduct
-    var productList = ["product1", "product2", "product3", "product4"];
+    var productList = ["Product Plan 1", "Product Plan 2", "Product Plan 3", "Product Plan 4"];
     //function that change product picture on click
     function change(clicked_id) {
       //changing the image with src
