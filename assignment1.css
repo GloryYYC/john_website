@@ -74,9 +74,8 @@ a:hover {
     text-align: center;
     font-family: 'Myriad', sans-serif;
 }
-
-.hero img {
-    position: absolute;
+.hero img{
+  position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,7 +84,6 @@ a:hover {
     opacity: 0.9;
     background-color: black;
 }
-
 .hero video {
     position: absolute;
     top: 0;
@@ -102,25 +100,21 @@ a:hover {
     font: bold 60px 'Open Sans', sans-serif;
     margin-bottom: 15px;
 }
-
-.hero input {
-    margin: 12px;
+.hero input{
+  margin: 12px;
 }
-
 .hero hr {
     margin-top: 10px;
     margin-left: 250px;
     margin-right: 250px;
     margin-bottom: 10px;
 }
-
-#submit {
-    background-color: #1a75ff;
-    padding: 10px;
-    display: inline-block!important;
-    margin: 10px;
+#submit{
+  background-color: #1a75ff;
+  padding: 10px;
+  display: inline-block!important;
+  margin: 10px;
 }
-
 .hero h2 {
     padding-top: 50px;
     margin-bottom: 15px;
@@ -150,7 +144,7 @@ a:hover {
 .staffInfo {
     margin: 12px;
     position: relative;
-    display: flex;
+    display: flex!important;
     justify-content: center;
 }
 
@@ -166,10 +160,7 @@ div.container {
     padding: 10px 20px;
 }
 
-
 /*contact-form*/
-
-
 /*
 .contact-form {
   position: relative;
@@ -229,7 +220,6 @@ div.container {
     margin-bottom: 10px;
 }
 */
-
 
 /*-------------
 From john's example 2
