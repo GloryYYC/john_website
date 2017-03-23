@@ -132,6 +132,7 @@ a:hover {
     font-weight: bold;
     font-size: 1.3em;
     padding: 10px;
+
 }
 
 .hero-text:hover {
@@ -148,7 +149,11 @@ a:hover {
     display: flex!important;
     justify-content: center;
 }
-
+.productInfo {
+    position: relative;
+    display: flex!important;
+    justify-content: center;
+}
 div.polaroid {
     width: 80%;
     background-color: white;
@@ -178,13 +183,12 @@ From john's example 2
     position: relative;
     top: auto;
     margin-top: 40px;
-    min-height: 95vh!important;
+
 }
 
 .wrapper {
     margin-left: 100px;
     margin-right: 100px;
-    padding: 10px;
     flex: 1 100%;
 }
 
@@ -204,15 +208,6 @@ section article h4 {
 
 .main {
     text-align: left;
-    background: white;
-}
-
-.aside-2 {
-    background: white;
-}
-
-.aside-1 {
-    background: white;
 }
 
 .aside-1 li {
