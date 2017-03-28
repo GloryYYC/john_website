@@ -6,6 +6,80 @@ html * {
     box-sizing: border-box;
 }
 
+/* Modal Header */
+.modal-header {padding: 2px 16px;}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+.textbox {
+    border: 1px solid #848484;
+    border-radius: 5px;
+    outline:0;
+    height:25px;
+    width: 275px;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 10px;
+  }
+
+  .submit {
+    background: #3498db;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .submit:hover {
+    background: #3cb0fd;
+      text-decoration: none;
+  }
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /*header*/
 
@@ -148,13 +222,16 @@ a:hover {
     position: relative;
     display: flex!important;
     justify-content: center;
+    margin-left: 100px!important;
+    margin-right: 100px!important;
 }
 .productInfo {
     position: relative;
     display: flex!important;
     justify-content: center;
 }
-div.polaroid {
+
+div.card {
     width: 80%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -183,15 +260,11 @@ From john's example 2
     position: relative;
     top: auto;
     margin-top: 40px;
-
-}
-
-.wrapper {
+    min-height: 100vh!important;
     margin-left: 100px;
     margin-right: 100px;
     flex: 1 100%;
 }
-
 
 section article h4 {
     font-weight: bold;
@@ -217,7 +290,7 @@ section article h4 {
 .aside-1 li a {
     color: grey!important;
 }
-
+/*media monitor size */
 @media all and (max-height: 600px) {
     .hero {
         min-height: 20vh;

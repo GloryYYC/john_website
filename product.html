@@ -14,6 +14,28 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Asignment1</title>
 </head>
+<!-- The Modal -->
+<div id="memberModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal();">&times;</span>
+      <h2>Login</h2>
+      <hr />
+    </div>
+    <div class="modal-body">
+      User name: <input type="text" class="textbox" name="usrName" id="loginName"><br />
+      Password: <input type="text" class="textbox" name="password" id="loginPassword"><br />
+      <a href="#" class="submit" onclick="loginCheck();">Login</a>
+    </div>
+    <div class="modal-footer">
+      <br /><h2>Sign Up</h2><hr />
+        User name: <input type="text" class="textbox" name="usrName" id="signUpName">(At least 8 character are required<span style="color:red;">*</span>)<br />
+        Password: <input type="text" class="textbox" name="password" id="signUpPassword">(At least 8 character are required<span style="color:red;">*</span>)<br />
+              <a href="#" class="submit" onclick="signUpCheck();">Sign up</a>
+    </div>
+  </div>
+</div>
 
 <body>
     <header>
@@ -23,6 +45,7 @@
             <li><a href="about.html">About us</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
+              <li><button id="memberArea" onclick="displayModal();">Memeber area</button></li>
         </nav>
     </header>
     <section class="wrapper">
@@ -32,7 +55,7 @@
                 it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                 Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <br />
-                <img src="img/Product Plan 1.jpg" id="contentPic" width="65%" height="65%" />
+                <img src="img/Product Plan 1.jpg" id="contentPic" width="70%" height="70%" />
         </article>
         <aside class="aside aside-1" >
             <li><a href="#" id="0" onclick="change(this.id)">Product plan 1</a></li>
@@ -40,29 +63,6 @@
             <li><a href="#" id="2" onclick="change(this.id)">Product plan 3</a></li>
             <li><a href="#" id="3" onclick="change(this.id)">Product plan 4</a></li>
         </aside>
-    </section>
-    <section class="productInfo">
-        <div class="polaroid">
-            <img src="img/profile1.jpg" alt="me">
-            <div class="container">
-                <h3>Me</h3>
-                <p>Description of Me.</p>
-            </div>
-        </div>
-        <div class="polaroid">
-            <img src="img/profile2.jpg" alt="myself">
-            <div class="container">
-                <h3>Myself</h3>
-                <p>Description of Myself.</p>
-            </div>
-        </div>
-        <div class="polaroid">
-            <img src="img/profile3.jpg" alt="I">
-            <div class="container">
-                <h3>I</h3>
-                <p>Description of I.</p>
-            </div>
-        </div>
     </section>
     <footer class="footer">copy right 2017 somthing somthing</footer>
     <script src="assignment2.js"></script>
