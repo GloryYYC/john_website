@@ -13,7 +13,7 @@ html * {
 /* Modal reg */
 .modal-reg {padding: 2px 16px;}
 
-.textbox {
+.inputbox {
     border: 1px solid #848484;
     border-radius: 5px;
     outline:0;
