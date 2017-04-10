@@ -25,8 +25,8 @@
         <div class="modal-login" id="login">
             <h2>Login</h2>
             <hr />
-            <input type="text" class="textbox" name="usrName" id="loginName" placeholder="User name:"><br />
-            <input type="text" class="textbox" name="password" id="loginPassword" placeholder="Password:"><br />
+            <input type="text" class="inputbox" name="usrName" id="loginName" placeholder="User name:"><br />
+            <input type="text" class="inputbox" name="password" id="loginPassword" placeholder="Password:"><br />
             <input type="submit" class="submit" onclick="loginCheck();" value="Login">
             <a href="#" class="register" onclick="displayChange(this.id);" id="regButton">New user?</a>
         </div>
@@ -34,9 +34,9 @@
             <br />
             <h2>Sign Up</h2>
             <hr />
-            <input type="text" class="textbox" name="usrName" id="signUpName" placeholder="User name:"><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /><br />
-            <input type="text" class="textbox" name="password" id="signUpPassword" placeholder="Password:"><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /><br />
-            <input type="text" class="textbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><br />
+            <input type="text" class="inputbox" name="signUpName" id="signUpName" placeholder="User name:"><span id="signUpName-status"></span><br />
+            <input type="text" class="inputbox" name="signUpPassword" id="signUpPassword" placeholder="Password:"><span id="signUpPassword-status"></span><br />
+            <input type="text" class="inputbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><span id="signUpEmail-status"></span><br />
             <div class="g-recaptcha" data-sitekey="6Lf00xsUAAAAACWE8gL_rltSvznJmxKoeqW9fRtT"></div><br />
             <input type="submit" class="submit" onclick="signUpCheck();" value="Sign Up"></input>
             <a href="#" class="register" onclick="displayChange(this.id);" id="logButton">Login</a>
