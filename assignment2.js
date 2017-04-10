@@ -65,3 +65,25 @@ function loginCheck() {
     //*****check all factor
     check <= 1 ? alert("Worng user name or password.") : check = 3;
 }
+
+function displayChange(id) {
+    if (id == "regButton"){
+      document.getElementById('reg').style.display = 'block';
+      document.getElementById('login').style.display = 'none';
+    }else {
+      document.getElementById('reg').style.display = 'none';
+      document.getElementById('login').style.display = 'block';
+    }
+}
+
+function checkAvailability() {
+    $.ajax({
+        url: "check_availability.php",
+        data: 'username=' + $("#username").val(),
+        type: "POST",
+        success: function(data) {
+            $("#user-availability-status").html(data);
+        },
+        error: function() {}
+    });
+}

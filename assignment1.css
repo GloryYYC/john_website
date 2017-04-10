@@ -6,11 +6,12 @@ html * {
     box-sizing: border-box;
 }
 
-/* Modal Header */
-.modal-header {padding: 2px 16px;}
-
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
+/* Modal close */
+.modal-close {padding: 2px 16px;}
+/* Modal login */
+.modal-login {padding: 2px 16px;}
+/* Modal reg */
+.modal-reg {padding: 2px 16px;}
 
 .textbox {
     border: 1px solid #848484;
@@ -36,16 +37,24 @@ html * {
       text-decoration: none;
   }
 
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-}
+  .register {
+    background: #46a046;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .register:hover {
+    background: #83c983;
+      text-decoration: none;
+  }
 
 /* The Modal (background) */
 .modal {
     display: none;
     position: fixed;
-    z-index: 99; 
+    z-index: 99;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -58,6 +67,7 @@ html * {
 
 /* Modal Content */
 .modal-content {
+  width: 30%!important;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;

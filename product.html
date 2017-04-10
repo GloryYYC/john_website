@@ -13,28 +13,35 @@
     <!--for logo-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Asignment1</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <!-- The Modal -->
 <div id="memberModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close" onclick="closeModal();">&times;</span>
-      <h2>Login</h2>
-      <hr />
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-close">
+            <span class="close" onclick="closeModal();">&times;</span>
+        </div>
+        <div class="modal-login" id="login">
+            <h2>Login</h2>
+            <hr />
+            <input type="text" class="textbox" name="usrName" id="loginName" placeholder="User name:"><br />
+            <input type="text" class="textbox" name="password" id="loginPassword" placeholder="Password:"><br />
+            <input type="submit" class="submit" onclick="loginCheck();" value="Login">
+            <a href="#" class="register" onclick="displayChange(this.id);" id="regButton">New user?</a>
+        </div>
+        <div class="modal-reg" style="display:none;" id="reg">
+            <br />
+            <h2>Sign Up</h2>
+            <hr />
+            <input type="text" class="textbox" name="usrName" id="signUpName" placeholder="User name:"><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /><br />
+            <input type="text" class="textbox" name="password" id="signUpPassword" placeholder="Password:"><img src="LoaderIcon.gif" id="loaderIcon" style="display:none" /><br />
+            <input type="text" class="textbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><br />
+            <div class="g-recaptcha" data-sitekey="6Lf00xsUAAAAACWE8gL_rltSvznJmxKoeqW9fRtT"></div><br />
+            <input type="submit" class="submit" onclick="signUpCheck();" value="Sign Up"></input>
+            <a href="#" class="register" onclick="displayChange(this.id);" id="logButton">Login</a>
+        </div>
     </div>
-    <div class="modal-body">
-      User name: <input type="text" class="textbox" name="usrName" id="loginName"><br />
-      Password: <input type="text" class="textbox" name="password" id="loginPassword"><br />
-      <a href="#" class="submit" onclick="loginCheck();">Login</a>
-    </div>
-    <div class="modal-footer">
-      <br /><h2>Sign Up</h2><hr />
-        User name: <input type="text" class="textbox" name="usrName" id="signUpName">(At least 8 character are required<span style="color:red;">*</span>)<br />
-        Password: <input type="text" class="textbox" name="password" id="signUpPassword">(At least 8 character are required<span style="color:red;">*</span>)<br />
-              <a href="#" class="submit" onclick="signUpCheck();">Sign up</a>
-    </div>
-  </div>
 </div>
 
 <body>
@@ -45,19 +52,19 @@
             <li><a href="about.html">About us</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="contact.html">Contact</a></li>
-              <li><button id="memberArea" onclick="displayModal();">Memeber area</button></li>
+            <li><button id="memberArea" onclick="displayModal();">Memeber area</button></li>
         </nav>
     </header>
     <section class="wrapper">
         <article class="main">
             <h2 id="contentTitle">This is product plan 1</h2>
-            <p>This is a general product description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <br />
-                <img src="img/Product Plan 1.jpg" id="contentPic" width="70%" height="70%" />
+            <p>This is a general product description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <br />
+            <img src="img/Product Plan 1.jpg" id="contentPic" width="70%" height="70%" />
         </article>
-        <aside class="aside aside-1" >
+        <aside class="aside aside-1">
             <li><a href="#" id="0" onclick="change(this.id)">Product plan 1</a></li>
             <li><a href="#" id="1" onclick="change(this.id)">Product plan 2</a></li>
             <li><a href="#" id="2" onclick="change(this.id)">Product plan 3</a></li>
