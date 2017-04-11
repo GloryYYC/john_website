@@ -6,6 +6,7 @@ html * {
     box-sizing: border-box;
 }
 
+.status-not-available{color:#D60202;font-size:x-small;}
 /* Modal close */
 .modal-close {padding: 2px 16px;}
 /* Modal login */

@@ -49,23 +49,6 @@ function signUpCheck() {
     }
 }
 
-function loginCheck() {
-    //*****checking variable
-    var check = 3;
-    //*****var for loop
-    var i;
-    //*****if else check name length
-    document.getElementById("loginName").value.length < 8 ? alert("You user name is shorter than 8 characters.") : check--;
-    //*****if else check password length
-    document.getElementById("loginPassword").value.length < 8 ? alert("You password is shorter than 8 characters.") : check--;
-    // *****loop the whole array
-    for (i = 0; i < usrNameArray.length; i++) {
-        document.getElementById("loginName").value == usrNameArray[i] && document.getElementById("loginPassword").value == passwordArray[i] ? alert("Login Success.") : check--;
-    }
-    //*****check all factor
-    check <= 1 ? alert("Worng user name or password.") : check = 3;
-}
-
 function displayChange(id) {
     if (id == "regButton"){
       document.getElementById('reg').style.display = 'block';
@@ -77,13 +60,33 @@ function displayChange(id) {
 }
 
 function checkAvailability() {
-    $.ajax({
-        url: "check_availability.php",
-        data: 'username=' + $("#username").val(),
-        type: "POST",
-        success: function(data) {
-            $("#user-availability-status").html(data);
-        },
-        error: function() {}
-    });
+	$("#loaderIcon").show();
+	$.ajax({
+	url: "check_availability.php",
+	data:'username='+$("#username").val(),
+	type: "POST",
+	success:function(data){
+		$("#signUpName-status").html(data);
+		$("#loaderIcon").hide();
+	},
+	error:function (){}
+	});
 }
+
+$().ready(
+    function() {
+        $('#register-form').submit(function(evt) {
+            $('#timeTaken').val(timeExit);
+            if ($('#frameSelected').val() === "") {
+                alert("Please at least select one from each category");
+                evt.preventDefault();
+            }
+        });
+        $('#login-form').submit(function(evt) {
+            $('#timeTaken').val(timeExit);
+            if ($('#frameSelected').val() === "") {
+                alert("Please at least select one from each category");
+                evt.preventDefault();
+            }
+        });
+      });

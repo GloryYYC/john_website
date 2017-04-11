@@ -14,6 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Asignment1</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <!-- The Modal -->
 <div id="memberModal" class="modal">
@@ -25,21 +26,24 @@
         <div class="modal-login" id="login">
             <h2>Login</h2>
             <hr />
-            <input type="text" class="inputbox" name="usrName" id="loginName" placeholder="User name:"><br />
-            <input type="text" class="inputbox" name="password" id="loginPassword" placeholder="Password:"><br />
-            <input type="submit" class="submit" onclick="loginCheck();" value="Login">
-            <a href="#" class="register" onclick="displayChange(this.id);" id="regButton">New user?</a>
+            <form class="form" action="login.php" method="post" id="login-form">
+                <input type="text" class="inputbox" name="usrName" id="loginName" placeholder="User name:"><br />
+                <input type="text" class="inputbox" name="password" id="loginPassword" placeholder="Password:"><br />
+                <input type="submit" class="submit" value="Login">
+                <a href="#" class="register" onclick="displayChange(this.id);" id="regButton">New user?</a>
+            </form>
         </div>
         <div class="modal-reg" style="display:none;" id="reg">
-            <br />
-            <h2>Sign Up</h2>
-            <hr />
-            <input type="text" class="inputbox" name="signUpName" id="signUpName" placeholder="User name:"><span id="signUpName-status"></span><br />
-            <input type="text" class="inputbox" name="signUpPassword" id="signUpPassword" placeholder="Password:"><span id="signUpPassword-status"></span><br />
-            <input type="text" class="inputbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><span id="signUpEmail-status"></span><br />
-            <div class="g-recaptcha" data-sitekey="6Lf00xsUAAAAACWE8gL_rltSvznJmxKoeqW9fRtT"></div><br />
-            <input type="submit" class="submit" onclick="signUpCheck();" value="Sign Up"></input>
-            <a href="#" class="register" onclick="displayChange(this.id);" id="logButton">Login</a>
+            <form class="form" action="register.php" method="post" id="login-form">
+                <h2>Sign Up</h2>
+                <hr />
+                <input type="text" class="inputbox" name="username" id="username" placeholder="User name:" onblur="checkAvailability();"><img src="img\ajax-loader.gif" id="loaderIcon" style="display:none" /><span id="signUpName-status"></span><br />
+                <input type="text" class="inputbox" name="signUpPassword" id="signUpPassword" placeholder="Password:" onblur="checkLength();"><span id="signUpPassword-status"></span><br />
+                <input type="text" class="inputbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><span id="signUpEmail-status"></span><br />
+                <div class="g-recaptcha" data-sitekey="6Lf00xsUAAAAACWE8gL_rltSvznJmxKoeqW9fRtT"></div><br />
+                <input type="submit" class="submit" onclick="signUpCheck();" value="Sign Up"></input>
+                <a href="#" class="register" onclick="displayChange(this.id);" id="logButton">Login</a>
+            </form>
         </div>
     </div>
 </div>
