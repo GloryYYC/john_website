@@ -34,16 +34,14 @@
             </form>
         </div>
         <div class="modal-reg" style="display:none;" id="reg">
-            <form class="form" action="register.php" method="post" id="login-form">
                 <h2>Sign Up</h2>
                 <hr />
                 <input type="text" class="inputbox" name="username" id="username" placeholder="User name:" onblur="checkAvailability();"><img src="img\ajax-loader.gif" id="loaderIcon" style="display:none" /><span id="signUpName-status"></span><br />
-                <input type="text" class="inputbox" name="signUpPassword" id="signUpPassword" placeholder="Password:" onblur="checkLength();"><span id="signUpPassword-status"></span><br />
+                <input type="password" class="inputbox" name="signUpPassword" id="signUpPassword" placeholder="Password:" onblur="checkLength();"><span id="signUpPassword-status"></span><br />
                 <input type="text" class="inputbox" name="signUpEmail" id="signUpEmail" placeholder="Email:"><span id="signUpEmail-status"></span><br />
                 <div class="g-recaptcha" data-sitekey="6Lf00xsUAAAAACWE8gL_rltSvznJmxKoeqW9fRtT"></div><br />
                 <input type="submit" class="submit" onclick="signUpCheck();" value="Sign Up"></input>
                 <a href="#" class="register" onclick="displayChange(this.id);" id="logButton">Login</a>
-            </form>
         </div>
     </div>
 </div>

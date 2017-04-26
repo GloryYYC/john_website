@@ -1,8 +1,7 @@
-<html>
-<body>
+
 <?php
 session_start();
-$conn = new mysqli('mysql.hostinger.co.uk','u200571408_user','cryansEvNec8','u200571408_db1');
+$conn = new mysqli('mysql.hostinger.co.uk','u150784719_user','cryansEvNec8','u150784719_db');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -16,5 +15,3 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }$conn->close();
 ?>
-</body>
-</html>
