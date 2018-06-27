@@ -13,26 +13,7 @@
     <!--for logo-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Asignment1</title>
-</head>
-<body>
-    <header>
-        <h2>IFINA</h2>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </nav>
-    </header>
-    <section class="hero">
-      <video controls="false" loop autoplay="autoplay">
-  <source src="img/632332824.mp4" type="video/mp4">
-</video>
-        <h1>Accomplish more.</h1>
-        <h3>With less mess. Is not that hard.</h3>
-        <a href="product.html" class="hero-text">Learn more</a>
-    </section>
-    <script type="text/javascript">
+        <script type="text/javascript">
   (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
   ;r.type="text/javascript";r.async=true
   ;r.src="https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js"
@@ -58,6 +39,26 @@
 
   amplitude.getInstance().init("edaf051f9c47f2ee8ac702f9c329f0e3");
 </script>
+</head>
+<body>
+    <header>
+        <h2>IFINA</h2>
+        <nav>
+            <li><a href="index.html" onclick="amplitude.getInstance().logEvent('clicked home');">Home</a></li>
+            <li><a href="about.html" onclick="amplitude.getInstance().logEvent('clicked about');">About us</a></li>
+            <li><a href="product.html" onclick="amplitude.getInstance().logEvent('clicked product');">Products</a></li>
+            <li><a href="contact.html" onclick="amplitude.getInstance().logEvent('clicked contact');">Contact</a></li>
+        </nav>
+    </header>
+    <section class="hero">
+      <video controls="false" loop autoplay="autoplay">
+  <source src="img/632332824.mp4" type="video/mp4">
+</video>
+        <h1>Accomplish more.</h1>
+        <h3>With less mess. Is not that hard.</h3>
+        <a href="product.html" class="hero-text" onclick="amplitude.getInstance().logEvent('clicked product');">Learn more</a>
+    </section>
+
     <footer class="footer">copy right 2017 somthing somthing</footer>
 </body>
 
